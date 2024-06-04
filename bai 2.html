@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function demKiTuInHoa(chuoi) {
+        let soLuongInHoa = 0;
+        for (let i = 0; i < chuoi.length; i++) {
+            if (chuoi[i] >= 'A' && chuoi[i] <= 'Z') {
+                soLuongInHoa++;
+            }
+        }
+        if (soLuongInHoa > 0) {
+            return soLuongInHoa;
+        } else {
+            return "The String is not contain upper char";
+        }
+    }
+    document.write(demKiTuInHoa("abcdEF"))
+    document.write(demKiTuInHoa("abcdef"))
+</script>
+</body>
+</html>
